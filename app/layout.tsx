@@ -11,16 +11,13 @@ import { baseUrl } from 'lib/utils';
 const { SITE_NAME } = process.env;
 
 export const metadata = {
-  metadataBase: new URL(baseUrl),
   title: {
-    default: SITE_NAME!,
-    template: `%s | ${SITE_NAME}`
+    default: 'Modeling Career Guide',
+    template: '%s | Modeling Career Guide'
   },
-  robots: {
-    follow: true,
-    index: true
-  }
+  description: 'The definitive resource for launching and advancing your modeling career.'
 };
+
 
 export default async function RootLayout({
   children
